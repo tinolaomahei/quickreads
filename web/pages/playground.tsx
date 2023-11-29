@@ -35,7 +35,7 @@ const Dashboard = () => {
       logs: appended,
     });
 
-    const response = await fetch(`http://localhost:3010/ai/run`, {
+    const response = await fetch(`https://quickreads-6ec74182c543.herokuapp.com/ai/run`, {
       method: "POST",
       headers: myHeaders,
       body: raw,
