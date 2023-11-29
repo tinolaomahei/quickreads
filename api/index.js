@@ -150,6 +150,7 @@ const init = async () => {
           stream.write(
             "Sorry, I can't help right now. This service has been turned off.\n"
           );
+          stream._compressor.flush();
         }
 
         return h.response(stream).type("text/event-stream");
