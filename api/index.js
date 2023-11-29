@@ -71,7 +71,7 @@ const init = async () => {
           console.error("passThrough encountered an error:", err);
         });
 
-        if (process.env.IS_AVAILABLE) {
+        if (process.env.IS_AVAILABLE === "true") {
           const config = {
             method: "post",
             url: "https://api.openai.com/v1/chat/completions",
