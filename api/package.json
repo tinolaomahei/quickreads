@@ -1,0 +1,18 @@
+{
+  "name": "quickreads-api",
+  "version": "1.0.0",
+  "description": "An API for quickREADS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "deploy:prod": "cd .. && git subtree push --prefix api heroku master"
+  },
+  "author": "tino",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.2.0",
+    "axios": "^1.3.2",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.6.0"
+  }
+}
